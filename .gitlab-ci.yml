@@ -2,6 +2,7 @@ production:
     script:
       - cd /tmp
       - git clone https://github.com/zamoose/wcus-ocfp.git
+      - rm -rf /tmp/wcus-ocfp
     type: deploy
     tags:
       - cfp
