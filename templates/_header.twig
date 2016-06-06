@@ -6,14 +6,14 @@
                 </div>
                 <div class="col-md-9">
                     {% if cfp_open %}
-                        <h1 class="headline headline-alpha">Call For Papers Now Open!</h1>
+                        <h1 class="headline headline-alpha">Speaker Applications Now Open!</h1>
                         <h3 class="headline headline-alpha">Submissions accepted until {{ site.enddate }}</h3>
                     {% else %}
                         <h1 class="headline headline-alpha">
                             {% if site.show_submission_count %}
-                                Call for Papers ended with {{ number_of_talks }} Submissions!
+                                Speaker Applications ended with {{ number_of_talks }} Submissions!
                             {% else %}
-                                Call for Papers has ended!
+                                Speaker Applications have ended!
                             {% endif %}
                         </h1>
                         <h3 class="headline headline-alpha">Submissions were accepted until {{ site.enddate }}</h3>
