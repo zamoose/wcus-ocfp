@@ -1,0 +1,9 @@
+production:
+    script:
+      - cd /tmp
+      - git clone https://github.com/zamoose/wcus-ocfp.git
+    type: deploy
+    tags:
+      - cfp
+      - wcus
+      - production
