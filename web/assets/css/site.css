@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: #e24b3b;
+  color: #941217;
 }
 
 a:hover {
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .section--primary {
-  background: #e24b3b;
+  background: #0f2b56;
   color: #FFF;
 }
 
@@ -140,12 +140,12 @@ a:hover {
  */
 .btn-opencfp--primary {
   background: #FFF;
-  color: #e24b3b;
+  color: #941217;
 }
 
 .btn-opencfp--primary:hover {
   background: #F7F7F7;
-  color: #e24b3b;
+  color: #941217;
 }
 
 .btn-opencfp--light {
@@ -166,7 +166,7 @@ a:hover {
 
 .btn-opencfp--outlined:hover {
   background: #FFF;
-  color: #e24b3b;
+  color: #941217;
 }
 
 .btn-opencfp--centered {
@@ -184,7 +184,7 @@ a:hover {
 }
 
 .module__header {
-  background: #e24b3b;
+  background: #941217;
   color: #FFF;
   padding: 1rem 2rem;
 }
@@ -301,7 +301,7 @@ a:hover {
 .primary-text,
 .megaphone-cover,
 .megaphone-end {
-  fill: #e24b3b;
+  fill: #941217;
 }
 
 .base-text,
@@ -409,7 +409,7 @@ a:hover {
 .navbar-opencfp .nav .open>a:focus
 {
   background: none;
-  border-color: #e24b3b;
+  border-color: #941217;
 }
 
 .navbar-opencfp .navbar-toggle {
