@@ -2,7 +2,7 @@ production:
     script:
       - cd /tmp
       - git clone https://github.com/zamoose/wcus-ocfp.git
-      - sudo -u nginx /usr/bin/rsync -av --exclude .git* /tmp/wcus-ocfp /var/www/html/wcus-speakers.org/
+      - sudo -u nginx /usr/bin/rsync -av --exclude .git* /tmp/wcus-ocfp /var/www/html/wcus-speakers.org
       - rm -rf /tmp/wcus-ocfp
     type: deploy
     tags:
