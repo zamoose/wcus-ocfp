@@ -3,7 +3,7 @@
         <input name="id" type="hidden" value="{{ id }}">
     {% endif %}
     <div class="form-group">
-        <label for="form-user-email" class="col-sm-2 control-label">Email</label>
+        <label for="form-user-email" class="col-sm-2 control-label">Gravatar Email</label>
         <div class="col-sm-10">
             <input id="form-user-email" type="email" name="email" class="form-control" placeholder="you@domain.com" value="{{ email | default('') }}">
         </div>
@@ -38,6 +38,12 @@
         <label for="form-user-company" class="col-sm-2 control-label">Company</label>
         <div class="col-sm-10">
             <input id="form-user-company" type="text" name="company" class="form-control" placeholder="Company" value="{{ company | default('') }}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="form-user-dotorgusername" class="col-sm-2 control-label">WordPress.org Username</label>
+        <div class="col-sm-10">
+            <input id="form-user-dotorgusername" type="text" name="dotorgusername" class="form-control" placeholder="WordPress.org Username" value="{{ dotorgusername | default('') }}">
         </div>
     </div>
     <div class="form-group">
