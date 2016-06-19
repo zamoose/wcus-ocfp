@@ -47,15 +47,23 @@
         </div>
     </div>
     <div class="form-group">
+        <label for="form-user-slack" class="col-sm-2 control-label">WordPress Slack Username</label>
+        <div class="col-sm-10">
+            <input id="form-user-slack" type="text" name="slack" class="form-control" placeholder="Username" value="{{ slack | default('') }}">
+            <p class="help-block">Your username on the official <a href="https://make.wordpress.org/chat/">WordPress Slack instance</a>.</p>
+        </div>
+    </div>
+    <div class="form-group">
         <label for="form-user-twitter" class="col-sm-2 control-label">Twitter</label>
         <div class="col-sm-10">
             <input id="form-user-twitter" type="text" name="twitter" class="form-control" placeholder="@twitter" value="{{ twitter | default('') }}">
         </div>
     </div>
     <div class="form-group">
-        <label for="form-user-cell" class="col-sm-2 control-label">Cell phone # (will only be used for coordination during event)</label>
+        <label for="form-user-cell" class="col-sm-2 control-label">Cell phone #</label>
         <div class="col-sm-10">
             <input id="form-user-cell" type="text" name="cell" class="form-control" placeholder="(215)555-1212" value="{{ cell | default('') }}">
+            <p class="help-block">(will only be used for potential coordination during event -- we're not telemarketers!)</p>
         </div>
     </div>
     <div class="form-group">
