@@ -12,20 +12,15 @@
             <div class="col-md-8">
                 <blockquote>
                     <h2>{{ speaker.first_name }} {{ speaker.last_name }}</h2>
-                    {% if speaker.airport.code %}<p><a href="https://www.google.com/flights/#search;f={{ speaker.airport.code|upper }};t={{ airport|upper }};d={{ arrival }};r={{ departure }}" target="_blank">{{ speaker.airport.code }} </a><i class="fa fa-plane"></i></p>{% endif %}
                 </blockquote>
                 <p>
                   <i class="fa fa-envelope"></i> <a href="mailto:{{ speaker.email }}">{{ speaker.email }}</a><br>
-                  {% if speaker.twitter is not empty %}<i class="fa fa-twitter-square"></i> <a href="http://twitter.com/{{ speaker.twitter }}" target="_blank" rel="external">{{ speaker.twitter }}</a>{% endif %}
+                  {% if speaker.twitter is not empty %}<i class="fa fa-twitter-square"></i> <a href="http://twitter.com/{{ speaker.twitter }}" target="_blank" rel="external">{{ speaker.twitter }}</a>{% endif %}\
+                  {% if speaker.dotorgusername is not empty %}<i class="fa fa-twitter-square"></i> <a href="http://profiles.wordpress.org/{{ speaker.dotorgusername }}" target="_blank" rel="external">{{ speaker.dotorgusername }}</a>{% endif %}
+                  {% if speaker.slack is not empty %}<i class="fa fa-twitter-square"></i> <a href="http://twitter.com/{{ speaker.slack }}" target="_blank" rel="external">{{ speaker.slack }}</a>{% endif %}
                 </p>
                 <h3>Speaker Bio</h3>
                 <p>{{ speaker.bio|striptags|markdown }}</p>
-
-                {% if site.online_conference == false %}
-                    <h3>Other Information</h3>
-                    <strong>Need Transportation:</strong> {% if speaker.transportation == '1' %} Yes {% else %} No {% endif %}<br />
-                    <strong>Need Hotel:</strong> {% if speaker.hotel == '1' %} Yes {% else %} No {% endif %}
-                {% endif %}
 
                 {% if talks | length > 0 %}
                     <h3>Talk Submissions</h3>
