@@ -17,7 +17,7 @@
                   <i class="fa fa-envelope"></i> <a href="mailto:{{ speaker.email }}">{{ speaker.email }}</a><br>
                   {% if speaker.twitter is not empty %}<i class="fa fa-twitter-square"></i> <a href="http://twitter.com/{{ speaker.twitter }}" target="_blank" rel="external">{{ speaker.twitter }}</a><br />{% endif %}
                   {% if speaker.dotorgusername is not empty %}<i class="fa fa-wordpress"></i> <a href="http://profiles.wordpress.org/{{ speaker.dotorgusername }}" target="_blank" rel="external">{{ speaker.dotorgusername }}</a><br />{% endif %}
-                  {% if speaker.slack is not empty %}<i class="fa fa-slack"></i> <a href="http://twitter.com/{{ speaker.slack }}" target="_blank" rel="external">{{ speaker.slack }}</a><br />{% endif %}
+                  {% if speaker.slack is not empty %}<i class="fa fa-slack"></i>{{ speaker.slack }}<br />{% endif %}
                 </p>
                 <h3>Speaker Bio</h3>
                 <p>{{ speaker.bio|striptags|markdown }}</p>
