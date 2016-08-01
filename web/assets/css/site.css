@@ -388,10 +388,14 @@ a:hover {
 .navbar-opencfp {
   background: #eaf0f2;
 }
-  
+
   .navbar-opencfp .logo img {
     margin: 0.4em 0;
   }
+
+.navbar-opencfp img.horizlogo {
+    height: 65px;
+}
 
 .navbar-collapse {
   max-height: none;
