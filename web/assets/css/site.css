@@ -383,9 +383,15 @@ a:hover {
   background: #F7F7F7;
 }
 
+/* Header */
+
 .navbar-opencfp {
-  background: #6f6f6f;
+  background: #eaf0f2;
 }
+  
+  .navbar-opencfp .logo img {
+    margin: 0.4em 0;
+  }
 
 .navbar-collapse {
   max-height: none;
@@ -394,7 +400,7 @@ a:hover {
 .navbar-opencfp .navbar-nav > li > a,
 .navbar-opencfp .navbar-nav .dropdown-menu > li > a{
   border-top: 3px solid transparent;
-  color: #FFF;
+  color: #941217;
   -webkit-transition: border .2s ease-in-out;
 }
 
